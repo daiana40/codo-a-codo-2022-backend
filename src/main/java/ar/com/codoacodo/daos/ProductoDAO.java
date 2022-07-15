@@ -60,11 +60,10 @@ public class ProductoDAO {
 		try {
 			Statement st = con.createStatement();
 			
-			//resultset
+			//result set
 			ResultSet rs = st.executeQuery(sql);
 
-			while(rs.next()) {//si existe hay uno solo
-				//rs > sacando los datos
+			while(rs.next()) {//si existe hay uno solo//rs > sacando los datos
 				Long idProducto = rs.getLong(1);//tomar la primera columna 
 				String nombre = rs.getString(2);
 				Float precio = rs.getFloat(3);

@@ -13,7 +13,7 @@
 					<h1 style="text-align:center">ABM de Productos</h1>
 					<br>
 					<div class="alert alert-dismissible alert-secondary">
-					  <p class="mb-0" style="text-align:center">Presentamos un Sistema de Inventariado para la PYME Codo a Codo 4.0 donde podr&aacutes llevar el 
+					  <p class="mb-0" style="text-align:center">Presentamos un Sistema de Inventariado para la PYME Codo a Codo 4.0 donde podras llevar el 
 					  inventario de productos disponible, d&aacutendolo de alta haciendo clic en la opci&oacuten de la barra de navegaci&oacuten "Alta", 
 					  asi mismo puedes ver los art&iacuteculos disponibles en el Stock haciendo clic en la opci&oacuten "Listado. Se realizo aplicando JAVA, usando el IDE eclipse,
 					  el gestor de base de datos HeidiSQL, GitHub y realizando el Deploy v&iacutea Heroku."
@@ -29,14 +29,14 @@
 			      <section class="d-flex justify-content-between" style="background-color: rgba(0, 0, 0, 0.2)">
 			        <!-- Left -->
 			        <div class="">
-			          <span>P&oacute;ngase en contacto atreves de nuestras redes:</span>
+			          <span>Pongase en contacto a traves de nuestras redes:</span>
 			        </div>
 			      </section>
 			  
 			      <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
 			        © 2022 Copyright:
-			        <a class="text-white" href="https://github.com/luisdatc">https://github.com/luisdatc</a>
-			        <a class="text-white" href="https://www.linkedin.com/in/luis-daniel-torres-castellano-2b8a06127">https://www.linkedin.com/in/luis-daniel-torres-castellano-2b8a06127
+			        <a class="text-white" href="https://github.com/daiana40">//github.com/daiana40</a>
+			        <a class="text-white" href="https://www.linkedin.com/in/daiana-herrera-b6040449">https://www.linkedin.com/in/daiana-herrera-b6040449
 			        <i class="fab fa-linkedin"></i></a>
 			      </div>
 			      <!-- Copyright -->
