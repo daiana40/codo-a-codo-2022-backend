@@ -11,33 +11,31 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
+/*herencia*/
+//create controler es hijo de :
 @WebServlet("/api/EliminarController")
 public class EliminarController extends HttpServlet {
-	
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//recibe los datos del front 
+		String id = req.getParameter("id"); 
 		
-		String id = req.getParameter("id");
-
-		
-		//pedir una conexion: administradorDeConecion.getConection()
 		Connection con = AdministradorDeConexiones.getConnection(); 
-		if(con != null) {
-			//delete
-			String sql = "DELETE FROM PRODUCTO WHERE id="+id; 
+		if(con !=null) {
+			String sql = "DELETE FROM producto where id=" +id;  
 			
-			try {
-				Statement st = con.createStatement();
-				st.executeUpdate(sql);
+		   try {
+				Statement st = con.createStatement(); 
+				st.executeUpdate(sql); 
 				
-				//cierre de conexion 
+				// cierre dela conexion 
 				con.close();
-				
 				resp.sendRedirect(req.getContextPath()+"/api/ListadoController");
-			}catch (Exception e) {
-				e.printStackTrace();
-			}	
+		   } catch(Exception e) {
+			   e.printStackTrace();
+		   } 
+			
 		}
 	}
 }
