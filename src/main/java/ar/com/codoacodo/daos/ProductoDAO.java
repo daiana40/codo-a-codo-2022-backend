@@ -169,4 +169,3 @@ public class ProductoDAO {
 		return listado;
 	}
 }
-
