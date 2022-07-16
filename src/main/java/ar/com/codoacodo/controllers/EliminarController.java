@@ -35,7 +35,8 @@ public class EliminarController extends HttpServlet {
 				con.close();
 				
 				resp.sendRedirect(req.getContextPath()+"/api/ListadoController");
-			}catch (Exception e) {
+			}
+			catch (Exception e) {
 				e.printStackTrace();
 			}	
 		}
