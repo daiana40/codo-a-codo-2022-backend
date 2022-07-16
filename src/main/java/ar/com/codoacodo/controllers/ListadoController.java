@@ -15,12 +15,13 @@ import ar.com.codoacodo.dto.Producto;
 @WebServlet("/api/ListadoController")
 public class ListadoController extends HttpServlet {
 	
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	@Override //esto no lo tenia el profe por eso lo comente
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		
-		//crear la instancia DE ProductoDAO
+		//crear la instancia de productoDAO
 		ProductoDAO dao = new ProductoDAO();
 		
-		//invocar al metodo listarProductos()
+		//invocar al metodo listar productos 
 		List<Producto> listado = dao.listarProductos();
 		
 		//grabar el listado en el request para que lo vea la siguiente pagina
